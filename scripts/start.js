@@ -117,6 +117,7 @@ function setupCompiler(host, port, protocol) {
       messages.warnings.forEach(message => {
         console.log(message);
         console.log();
+        console.log("piyush");
       });
       // Teach some ESLint tricks.
       console.log('You may use special comments to disable some warnings.');
