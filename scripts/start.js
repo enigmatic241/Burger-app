@@ -6,6 +6,7 @@ process.env.NODE_ENV = 'development';
 // if this file is missing. dotenv will never modify any environment variables
 // that have already been set.
 // https://github.com/motdotla/dotenv
+// Hello enigmatic
 require('dotenv').config({silent: true});
 
 var chalk = require('chalk');
@@ -117,6 +118,7 @@ function setupCompiler(host, port, protocol) {
       messages.warnings.forEach(message => {
         console.log(message);
         console.log();
+        console.log("piyush");
       });
       // Teach some ESLint tricks.
       console.log('You may use special comments to disable some warnings.');
