@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Aux from '../../../hoc/Aux';
 import Button from '../../UI/Button/Button';
 
@@ -9,6 +9,7 @@ const ingredientSummary = Object.keys(props.ingredients)
 return <li key={igKey}><span style={{textTransform: 'capitalize'}}>{igKey}</span>: {props.ingredients[igKey]}</li>
 });
 
+const [order , setOrder] = useState(0);
     return(
         <Aux>
             <h3>Your Order</h3>
